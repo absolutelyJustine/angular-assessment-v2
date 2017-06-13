@@ -1,0 +1,10 @@
+<a class="pet-grid__pet" ng-click="showPetImage=false">
+  <img class="pet-grid__img" src="{{pet.image}}" sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw"
+       alt="{{pet.name}}" ng-show="showPetImage">
+</a>
+<a class="pet-grid__pet" ng-click="showPetImage=true">show image</a>
+<div class="pet-grid__meta">
+  <h3 class="pet-grid__name" ui-sref="pet-bio({id:pet.id})"><a>{{pet.name}}</a></h3>
+  <h4 class="pet-grid__sub">{{pet.breed}}</h4>
+  <div class="pet-grid__price">{{pet.age}} in dog years</div>
+</div>
